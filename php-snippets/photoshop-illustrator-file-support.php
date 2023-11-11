@@ -5,7 +5,7 @@
 * Just add this snippet to your theme's functions.php file or relevant place.
 */
 
-add_filter('fluentform_file_type_options', function ($types) {
+add_filter('fluentform/file_type_options', function ($types) {
     $types[] = [
         'label' => __('Graphics Files (psd, ai, eps)', 'fluentform'),
         'value' => 'psd|ai|eps|bin',
@@ -13,8 +13,8 @@ add_filter('fluentform_file_type_options', function ($types) {
     return $types;
 });
     
-add_action('fluentform_starting_file_upload', function () {
-    add_filter('fluentform_uploader_args', function ($args) {
+add_action('fluentform/starting_file_upload', function () {
+    add_filter('fluentform/uploader_args', function ($args) {
         $args['test_type'] = false;
         return $args;
     });

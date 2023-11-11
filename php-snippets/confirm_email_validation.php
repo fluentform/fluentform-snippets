@@ -4,7 +4,7 @@
 * You can use this code snippet to validate email field and cofirm email field. 
 */
 
-add_filter('fluentform_validation_errors', function ($errors, $data, $form) {
+add_filter('fluentform/validation_errors', function ($errors, $data, $form) {
   $targetFormId = 1; // 1 is your target form ID
   if($form->id != $targetFormId) {
       return $targetFormId;

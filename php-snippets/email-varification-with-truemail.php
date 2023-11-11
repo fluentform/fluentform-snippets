@@ -10,7 +10,7 @@
  * This will apply for all the forms in your site
  */
 
-add_filter('fluentform_validate_input_item_input_email', function ($default, $field, $formData, $fields, $form) {
+add_filter('fluentform/validate_input_item_input_email', function ($default, $field, $formData, $fields, $form) {
 
     $errorMessage = 'Looks like email is not correct'; // You may change here
     $trueMailApiKey = 'INSERT_YOUR_TRUEMAIL.IO_API_KEY';
@@ -47,7 +47,7 @@ add_filter('fluentform_validate_input_item_input_email', function ($default, $fi
  * Snippet: 2
  * This will apply for only form id: 12
  */
-add_filter('fluentform_validate_input_item_input_email', function ($default, $field, $formData, $fields, $form) {
+add_filter('fluentform/validate_input_item_input_email', function ($default, $field, $formData, $fields, $form) {
 
     // You may change the following 3 lines
     $targetFormId = 12;

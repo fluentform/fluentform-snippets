@@ -12,7 +12,7 @@
  * Snippet: 1
  * This will apply for only form id: 12
  */
-add_filter('fluentform_validate_input_item_input_email', function ($error, $field, $formData, $fields, $form) {
+add_filter('fluentform/validate_input_item_input_email', function ($error, $field, $formData, $fields, $form) {
     /*
      * add your banned sub-strings and form it here
      * If the textarea has any match it will make the form submission failed
@@ -48,7 +48,7 @@ add_filter('fluentform_validate_input_item_input_email', function ($error, $fiel
  * This will apply for all the forms in your site
  *
  */
-add_filter('fluentform_validate_input_item_textarea', function ($error, $field, $formData, $fields, $form) {
+add_filter('fluentform/validate_input_item_textarea', function ($error, $field, $formData, $fields, $form) {
     $bannedStrings = ['http', 'www'];
     $errorMessage = 'No Url is allowed in textarea';
 

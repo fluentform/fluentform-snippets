@@ -5,7 +5,7 @@
  * Use Case: Validate speci
  */
 
-add_filter('fluentform_validation_errors', function ($errors, $formData, $form) {
+add_filter('fluentform/validation_errors', function ($errors, $formData, $form) {
     // use only for a form; eg: only form id: 1
     if($form->id != 1) {
         return $errors;

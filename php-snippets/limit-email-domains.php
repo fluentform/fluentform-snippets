@@ -10,7 +10,7 @@
  * Snippet: 1
  * This will apply for all the forms in your site
  */
-add_filter('fluentform_validate_input_item_input_email', function ($error, $field, $formData, $fields, $form) {
+add_filter('fluentform/validate_input_item_input_email', function ($error, $field, $formData, $fields, $form) {
     /*
      * add your accepted domains here
      * Other domains will be failed to submit the form
@@ -37,7 +37,7 @@ add_filter('fluentform_validate_input_item_input_email', function ($error, $fiel
  * Snippet: 2
  * This will apply for only form id: 12
  */
-add_filter('fluentform_validate_input_item_input_email', function ($error, $field, $formData, $fields, $form) {
+add_filter('fluentform/validate_input_item_input_email', function ($error, $field, $formData, $fields, $form) {
     /*
      * add your accepted domains here
      * Other domains will be failed to submit the form

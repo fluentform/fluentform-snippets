@@ -6,10 +6,10 @@
  * selected more than 2 times in the previous responses. This is the snippet for you.
  *
  * This example is for checkbox. For other inputs just replace the filter name
- * radio: fluentform_rendering_field_data_input_radio
- * select/dropdown: fluentform_rendering_field_data_select
+ * radio: fluentform/rendering_field_data_input_radio
+ * select/dropdown: fluentform/rendering_field_data_select
  */
-add_filter('fluentform_rendering_field_data_input_checkbox', function ($field, $form) {
+add_filter('fluentform/rendering_field_data_input_checkbox', function ($field, $form) {
 
     $formId = 10; // change your form ID
     $targetElementName = 'checkbox'; // check with your input name

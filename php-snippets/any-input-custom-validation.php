@@ -7,33 +7,33 @@
 
 /*
  * Common Filter hook names
- * text/Mask: fluentform_validate_input_item_input_text
- * email: fluentform_validate_input_item_input_email
- * textarea: fluentform_validate_input_item_textarea
- * numeric: fluentform_validate_input_item_input_number
- * numeric: fluentform_validate_input_item_input_number
- * Range Slider: fluentform_validate_input_item_rangeslider
- * Range Slider: fluentform_validate_input_item_rangeslider
- * Address: fluentform_validate_input_item_address
- * Address: fluentform_validate_input_item_address
- * Country Select: fluentform_validate_input_item_select_country
- * Country Select: fluentform_validate_input_item_select_country
- * Select: fluentform_validate_input_item_select
- * Radio: fluentform_validate_input_item_input_radio
- * Checkbox: fluentform_validate_input_item_input_checkbox
- * Checkbox: fluentform_validate_input_item_input_checkbox
- * Website URL: fluentform_validate_input_item_input_input_url
- * Website URL: fluentform_validate_input_item_input_input_url
- * Date: fluentform_validate_input_item_input_input_date
- * Image Upload: fluentform_validate_input_item_input_image
- * File Upload: fluentform_validate_input_item_input_file
- * Phone Filed: fluentform_validate_input_item_phone
- * Phone Filed: fluentform_validate_input_item_phone
- * Color Picker: fluentform_validate_input_item_color_picker
- * Net Promoter Score: fluentform_validate_input_item_net_promoter_score
- * Password: fluentform_validate_input_item_input_password
- * Ratings: fluentform_validate_input_item_ratings
- * Ratings: fluentform_validate_input_item_ratings
+ * text/Mask: fluentform/validate_input_item_input_text
+ * email: fluentform/validate_input_item_input_email
+ * textarea: fluentform/validate_input_item_textarea
+ * numeric: fluentform/validate_input_item_input_number
+ * numeric: fluentform/validate_input_item_input_number
+ * Range Slider: fluentform/validate_input_item_rangeslider
+ * Range Slider: fluentform/validate_input_item_rangeslider
+ * Address: fluentform/validate_input_item_address
+ * Address: fluentform/validate_input_item_address
+ * Country Select: fluentform/validate_input_item_select_country
+ * Country Select: fluentform/validate_input_item_select_country
+ * Select: fluentform/validate_input_item_select
+ * Radio: fluentform/validate_input_item_input_radio
+ * Checkbox: fluentform/validate_input_item_input_checkbox
+ * Checkbox: fluentform/validate_input_item_input_checkbox
+ * Website URL: fluentform/validate_input_item_input_input_url
+ * Website URL: fluentform/validate_input_item_input_input_url
+ * Date: fluentform/validate_input_item_input_input_date
+ * Image Upload: fluentform/validate_input_item_input_image
+ * File Upload: fluentform/validate_input_item_input_file
+ * Phone Filed: fluentform/validate_input_item_phone
+ * Phone Filed: fluentform/validate_input_item_phone
+ * Color Picker: fluentform/validate_input_item_color_picker
+ * Net Promoter Score: fluentform/validate_input_item_net_promoter_score
+ * Password: fluentform/validate_input_item_input_password
+ * Ratings: fluentform/validate_input_item_ratings
+ * Ratings: fluentform/validate_input_item_ratings
  */
 
 /*
@@ -45,7 +45,7 @@
  * $fields: Array - All fields of the form
  * $form: Object - The Form Object
  */
-add_filter('fluentform_validate_input_item_input_text', function ($errorMessage, $field, $formData, $fields, $form) {
+add_filter('fluentform/validate_input_item_input_text', function ($errorMessage, $field, $formData, $fields, $form) {
     $fieldName = $field['name'];
     if (empty($formData[$fieldName])) {
         return $errorMessage;
@@ -66,7 +66,7 @@ add_filter('fluentform_validate_input_item_input_text', function ($errorMessage,
  * Snippet: 2
  * This will apply for all the forms in your site
  */
-add_filter('fluentform_validate_input_item_input_text', function ($errorMessage, $field, $formData, $fields, $form) {
+add_filter('fluentform/validate_input_item_input_text', function ($errorMessage, $field, $formData, $fields, $form) {
 
     /*
      * Validate only for form id 12
