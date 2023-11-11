@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Shuffle the Checkable items items on render.
+ * Shuffle the Checkable items on render.
  * For checkbox: fluenform_rendering_field_data_input_checkbox
  * For Radio: fluentform/rendering_field_data_input_radio
  * For Select: fluentform/rendering_field_data_select

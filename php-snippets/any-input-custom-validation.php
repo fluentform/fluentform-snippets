@@ -84,7 +84,7 @@ add_filter('fluentform/validate_input_item_input_text', function ($errorMessage,
 
     /*
      * You can validate this value and return $errorMessage
-     * If $error is empty then it's valid. Otherwise you can return the $errorMessage message as string
+     * If $error is empty then it's valid. Otherwise, you can return the $errorMessage message as string
      */
 
     return [$errorMessage];

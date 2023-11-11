@@ -1,7 +1,7 @@
 <?php
 
 /*
-* You can use this code snippet to validate email field and cofirm email field. 
+* You can use this code snippet to validate email field and confirm email field.
 */
 
 add_filter('fluentform/validation_errors', function ($errors, $data, $form) {
