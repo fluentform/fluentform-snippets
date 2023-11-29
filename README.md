@@ -21,6 +21,7 @@ Please use which are appropriate for you.
 - `Additional file types option to your file upload field ` Add supports for new file types. [View Snippet](https://github.com/WPManageNinja/fluentform-snippets/blob/master/php-snippets/photoshop-illustrator-file-support.php)
 - `Convert the email body in pure-text format ` Plain text email. [View Snippet](https://github.com/WPManageNinja/fluentform-snippets/blob/master/php-snippets/plain-text-email.php)
 - `Shuffle the Checkable items on render ` Randomize the order of options. [View Snippet](https://github.com/WPManageNinja/fluentform-snippets/blob/master/php-snippets/shuffle-checkable-items.php)
+- `Input Data Attributes` Custom input attributes for input fields. [View Snippet](https://github.com/WPManageNinja/fluentform-snippets/blob/master/php-snippets/custom-input-attributes.php)
 
 
 ### Contribution:
