@@ -38,3 +38,22 @@
         }
     ]
 }
+
+/*
+* Disable past dates and all future weekend dates:
+ */
+{
+    "disable" : [
+        function(date) {
+            const excludedDays = [0, 6]; // Exclude weekends (Saturday and Sunday)
+            const dateInfo = new Date(date);
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            if (dateInfo >= today && !excludedDays.includes(dateInfo.getDay())) {
+                // Date is future and not a weekend
+                return false;
+            }
+            return true;
+        }
+    ]
+}
