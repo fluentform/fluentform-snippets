@@ -22,6 +22,7 @@ Please use which are appropriate for you.
 - `Convert the email body in pure-text format ` Plain text email. [View Snippet](https://github.com/WPManageNinja/fluentform-snippets/blob/master/php-snippets/plain-text-email.php)
 - `Shuffle the Checkable items on render ` Randomize the order of options. [View Snippet](https://github.com/WPManageNinja/fluentform-snippets/blob/master/php-snippets/shuffle-checkable-items.php)
 - `Input Data Attributes` Custom input attributes for input fields. [View Snippet](https://github.com/fluentform/fluentform-snippets/blob/49e4c5cb87333c1e9586c3b0823011b52f58a300/php-snippets/custom-input-attributes.php)
+- `ACF Repeater Field on User Regristration` Format and update ACF repeater field meta for user registration. [View Snippet](https://github.com/fluentform/fluentform-snippets/blob/master/php-snippets/acf-repeater-field-user-meta.php)
 
 
 ### Contribution:
